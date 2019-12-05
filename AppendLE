@@ -1,0 +1,42 @@
+from Listas import ListaEnlazada
+
+
+def main():
+    le = ListaEnlazada()
+    a=int(input("Ingrese el estado que desea conocer. "))
+    print("Tome en cuenta que (1) es Aguascalientes y (32) es Zacatecas.")
+    if a == 1:
+        print("AGUASCALIENTES:")
+        print(" ENE    FEB    MAR    ABR    MAY    JUN    JUL    AGO    SEP    OCT    NOV    DIC    ANUAL")
+        le.append(15.4)
+        le.append(0.0)
+        le.append(0.0)
+        le.append(4.6)
+        le.append(7.8)
+        le.append(77)
+        le.append(106.6)
+        le.append(110.1)
+        le.append(100.8)
+        le.append(36.2)
+        le.append(3.3)
+        le.append(1.8)
+        le.append(463.5)
+        le.transversal()
+    elif a == 2:
+        print("BAJA CALIFORNIA:")
+        le.append(218.4)
+        le.append(20)
+        le.append(5.1)
+        le.append(0)
+        le.append(0)
+        le.append(0)
+        le.append(0.1)
+        le.append(5.3)
+        le.append(0.6)
+        le.append(1.7)
+        le.append(15.1)
+        le.append(5.4)
+        le.append(271.7)
+        le.transversal()
+
+main()
