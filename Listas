@@ -1,3 +1,7 @@
+"""
+Humberto Maldonado Guell
+García Cano Diego Alexis
+"""
 class Nodo:
     def __init__(self, value, siguiente=None):
         self.data = value
@@ -25,6 +29,6 @@ class ListaEnlazada:
     def transversal(self):
         nodo_actual = self.__head
         while nodo_actual.next != None:
-            print(f"{nodo_actual.data} -->",end="")
+            print(f"{nodo_actual.data} --> ",end="")
             nodo_actual = nodo_actual.next
         print(nodo_actual.data)
